@@ -1,1 +1,10 @@
 .DS_Store
+terraform.tfvars
+.terraform.lock.hcl
+.terraform
+demo-terraform-eks-cluster.zip
+__MACOSX
+metrics-server-0.3.6
+metrics-server-0.3.6.*
+
+kubernetes-dashboard-*
