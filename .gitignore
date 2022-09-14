@@ -8,3 +8,13 @@ metrics-server-0.3.6
 metrics-server-0.3.6.*
 
 kubernetes-dashboard-*
+
+AnotherMicroservice
+
+terraform.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+
+
+
