@@ -7,3 +7,6 @@ kind create cluster --name localterraformdemo --config Terraform_K8s/LocalK8sClu
 
 # retriev details about cluster for terraform.tfvars
 kubectl config view --minify --flatten --context=kind-localterraformdemo
+
+# activate metrics server
+kubectl apply -f https://raw.githubusercontent.com/ACloudGuru-Resources/content-cka-resources/master/metrics-server-components.yaml
