@@ -10,8 +10,3 @@ rm cilium-darwin-${CLI_ARCH}.tar.gz{,.sha256sum}
 # check cilium version
 cilium version
 
-# install cilium on cluster
-cilium install
-
-# check status
-cilium status
