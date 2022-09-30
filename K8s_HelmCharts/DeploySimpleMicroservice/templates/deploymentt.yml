@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: store-products
+  name: {{ .Values.name }}
   labels:
-    app: store-products
+    app: {{ .Values.name }}
 spec:
-  replicas: 4
+  replicas: {{ .Values.nosOfReplicas }}
   selector:
     matchLabels:
-      app: store-products
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: store-products
+        app: {{ .Values.name }}
     spec:
       containers:
-      - name: store-products
+      - name: {{ .Values.name }}
         image: nginx
         ports:
         - containerPort: 80
